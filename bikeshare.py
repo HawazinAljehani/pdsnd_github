@@ -88,7 +88,7 @@ def get_filters():
             print("Try again!!!")
 
 
-    print('-'*40)
+    print('-'*50)
     
 
     return city, month_switch[month] , day_switch[day]
@@ -129,11 +129,7 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
     
-    most_month = df['Start Time'].dt.strftime('%m'). value_counts(). idxmax()
-    print(df.head())
-    print(f'\nThe most common month is  { most_month }') 
     
     # TO DO: display the most common day of week
 
@@ -141,16 +137,20 @@ def time_stats(df):
     print('\nThe most common day is  ',{list(day_switch.keys())
       [list(day_switch.values()).index(most_day)] })
 
+    # TO DO: display the most common month
     
+    most_month = df['Start Time'].dt.strftime('%m'). value_counts(). idxmax()
+    print(df.head())
+    print(f'\nThe most common month is : { most_month }')   
 
     # TO DO: display the most common start hour
 
     most_hour = df['Start Time'].dt.strftime('%I'). value_counts(). idxmax()
-    print(f'\nThe most common hour is  { most_hour}' ) 
+    print(f'\nThe most common hour is  : { most_hour}' ) 
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -162,7 +162,7 @@ def station_stats(df):
     # TO DO: display most commonly used start station
     
     most_start_st = df['Start Station']. value_counts(). idxmax()
-    print(f'\nThe most common Start Station is { most_start_st}' ) 
+    print(f'\nThe most common Start Station is  : { most_start_st}' ) 
     
 
     # TO DO: display most commonly used end station
@@ -177,7 +177,7 @@ def station_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def trip_duration_stats(df):
@@ -196,7 +196,7 @@ def trip_duration_stats(df):
     print('\nThe average travel timeis  ' ,df['Trip Duration'].mean() )
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def user_stats(df):
@@ -235,7 +235,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def main():

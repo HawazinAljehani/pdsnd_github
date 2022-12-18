@@ -53,7 +53,7 @@ def get_filters():
             else:
                 print(' Enter the city name correctly!!! ')
         except:
-            print("Try again!!!")
+            print("Try Again!!!")
 
     # set default value 
     month = 'all'
@@ -71,7 +71,7 @@ def get_filters():
             else:
                 print('Please enter month number between 1 to 12 or all :)')    
         except:
-            print("Try again!!!")
+            print("Try Again!!!")
 
     
 
@@ -85,7 +85,7 @@ def get_filters():
             else:
                 print(' Enter the day name correctly !!! ')
         except:
-            print("Try again!!!")
+            print("Try Again!!!")
 
 
     print('-'*50)
@@ -228,7 +228,7 @@ def user_stats(df):
     # TO DO: Display earliest, most recent, and most common year of birth
 
     if 'Birth Year' in df.columns:
-        print('\nthe earliest year of birth, ',int(df['Birth Year'].min()),'\nthe most recent year, ',
+        print('\nThe earliest year of birth, ',int(df['Birth Year'].min()),'\nThe most recent year, ',
          int(df['Birth Year'].max()),' \nand most common year of birth' , int(df['Birth Year'].value_counts().idxmax()) )
 
 

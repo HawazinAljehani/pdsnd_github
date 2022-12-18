@@ -220,10 +220,10 @@ def user_stats(df):
         df3=df.groupby(['Gender'])['Trip Duration'].count()
         index2 = df3.index
 
-        j=0
+        z=0
         for i in index2:
-            print(f'{i}:   {df3[j]}')
-            j += 1
+            print(f'{i}:   {df3[z]}')
+            z += 1
 
     # TO DO: Display earliest, most recent, and most common year of birth
 

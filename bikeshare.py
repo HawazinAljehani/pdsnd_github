@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'newyork': 'new_york_city.csv', 'new york': 'new_york_city.csv', 
-              'washington': 'washington.csv' }
+CITY_DATA = { 'chicago': 'chicago.csv','chicago city': 'chicago.csv',
+              'newyork': 'new_york_city.csv', 'new york': 'new_york_city.csv', 'new york city': 'new_york_city.csv', 
+              'washington': 'washington.csv' , 'washington city ': 'washington.csv'}
 day_switch ={
         'monday': 0,'mon': 0,
         'tuesday': 1,'tue': 1,

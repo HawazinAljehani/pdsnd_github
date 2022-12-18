@@ -51,9 +51,9 @@ def get_filters():
             if city in CITY_DATA.keys():
                 break
             else:
-                print(' enter city name correctly!!! ')
+                print(' Enter the city name correctly!!! ')
         except:
-            print("try again!!!")
+            print("Try again!!!")
 
     # set default value 
     month = 'all'
@@ -69,23 +69,23 @@ def get_filters():
             if ( (month <= 'all ' )or (int(month) < 13 and int(month) > 0)  ):
                 break
             else:
-                print('please enter month number between 1 to 12 or all :)')    
+                print('Please enter month number between 1 to 12 or all :)')    
         except:
-            print("try again!!!")
+            print("Try again!!!")
 
     
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
-    while ((filter_type == 'day' ) or (filter_type == 'both' ))  :
+    while ((filter_type == 'both' ) or (filter_type == 'day' ))  :
         try:
             day = (input('Enter the name of the day . EX: sunday,mon,all.  ')).lower()
             if day in day_switch.keys():
                 break
             else:
-                print(' enter day name correctly!!! ')
+                print(' Enter the day name correctly !!! ')
         except:
-            print("try again!!!")
+            print("Try again!!!")
 
 
     print('-'*40)
